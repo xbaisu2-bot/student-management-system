@@ -11,24 +11,27 @@ public class StudentTest {
         System.out.println("\n2. 测试 setter 方法：");
         student.setId(1);
         student.setName("张三");
-        student.setAge(18);
         student.setGender("男");
-        student.setGrade("高三");
+        student.setClassName("软件1班");
+        student.setMathScore(85.5);
+        student.setJavaScore(90.0);
         System.out.println("   设置属性后：" + student);
         
         // 测试 getter 方法
         System.out.println("\n3. 测试 getter 方法：");
         System.out.println("   ID: " + student.getId());
         System.out.println("   姓名: " + student.getName());
-        System.out.println("   年龄: " + student.getAge());
         System.out.println("   性别: " + student.getGender());
-        System.out.println("   年级: " + student.getGrade());
+        System.out.println("   班级: " + student.getClassName());
+        System.out.println("   数学成绩: " + student.getMathScore());
+        System.out.println("   Java成绩: " + student.getJavaScore());
         
         // 测试修改属性
         System.out.println("\n4. 测试修改属性：");
         student.setName("李四");
-        student.setAge(19);
-        student.setGrade("大一");
+        student.setClassName("软件2班");
+        student.setMathScore(88.0);
+        student.setJavaScore(92.5);
         System.out.println("   修改后：" + student);
         
         // 测试空值情况
