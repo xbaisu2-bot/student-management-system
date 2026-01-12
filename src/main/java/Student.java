@@ -1,9 +1,10 @@
 public class Student {
     private int id;
     private String name;
-    private int age;
     private String gender;
-    private String grade;
+    private String className;
+    private double mathScore;
+    private double javaScore;
     
     // 无参构造方法
     public Student() {
@@ -27,15 +28,6 @@ public class Student {
         this.name = name;
     }
     
-    // Getter and Setter for age
-    public int getAge() {
-        return age;
-    }
-    
-    public void setAge(int age) {
-        this.age = age;
-    }
-    
     // Getter and Setter for gender
     public String getGender() {
         return gender;
@@ -45,13 +37,31 @@ public class Student {
         this.gender = gender;
     }
     
-    // Getter and Setter for grade
-    public String getGrade() {
-        return grade;
+    // Getter and Setter for className
+    public String getClassName() {
+        return className;
     }
     
-    public void setGrade(String grade) {
-        this.grade = grade;
+    public void setClassName(String className) {
+        this.className = className;
+    }
+    
+    // Getter and Setter for mathScore
+    public double getMathScore() {
+        return mathScore;
+    }
+    
+    public void setMathScore(double mathScore) {
+        this.mathScore = mathScore;
+    }
+    
+    // Getter and Setter for javaScore
+    public double getJavaScore() {
+        return javaScore;
+    }
+    
+    public void setJavaScore(double javaScore) {
+        this.javaScore = javaScore;
     }
     
     // toString method for easy printing
@@ -60,9 +70,10 @@ public class Student {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", age=" + age +
                 ", gender='" + gender + '\'' +
-                ", grade='" + grade + '\'' +
+                ", className='" + className + '\'' +
+                ", mathScore=" + mathScore +
+                ", javaScore=" + javaScore +
                 '}';
     }
 }
